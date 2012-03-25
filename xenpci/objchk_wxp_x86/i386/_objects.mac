@@ -1,0 +1,30 @@
+
+
+386_OBJECTS=\
+ $(OBJ_PATH)\$O\tpr_emulate.obj \
+ $(OBJ_PATH)\$O\dbgprint_hook.obj \
+ $(OBJ_PATH)\$O\xenpci.obj \
+ $(OBJ_PATH)\$O\xenpci_fdo.obj \
+ $(OBJ_PATH)\$O\xenpci_pdo.obj \
+ $(OBJ_PATH)\$O\evtchn.obj \
+ $(OBJ_PATH)\$O\gnttbl.obj \
+ $(OBJ_PATH)\$O\xenbus.obj \
+ $(OBJ_PATH)\$O\memory.obj \
+ $(OBJ_PATH)\$O\xenpci_device_interface.obj \
+ $(OBJ_PATH)\$O\xenbus_device_interface.obj \
+ $(OBJ_PATH)\$O\xenpci_highsync.obj \
+ $(OBJ_PATH)\$O\xenpci_patch_kernel.obj \
+ $(OBJ_PATH)\$O\xenpci_dbgprint.obj \
+
+
+_RES_FILE=$(OBJ_PATH)\$O\xenpci.res
+
+
+
+# lowercased
+BASEDIR=d:\winddk\7600.16385.1
+OBJECT_ROOT=d:\winddk\7600.16385.1
+MAKEDIR_LOWERCASE=c:\users\administrator\desktop\win-pvdrivers\xenpci
+OBJ_PATH=c:\users\administrator\desktop\win-pvdrivers\xenpci
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0

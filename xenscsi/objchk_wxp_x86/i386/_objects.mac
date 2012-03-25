@@ -1,0 +1,17 @@
+
+
+386_OBJECTS=\
+ $(OBJ_PATH)\$O\xenscsi.obj \
+
+
+_RES_FILE=$(OBJ_PATH)\$O\xenscsi.res
+
+
+
+# lowercased
+BASEDIR=d:\winddk\7600.16385.1
+OBJECT_ROOT=d:\winddk\7600.16385.1
+MAKEDIR_LOWERCASE=c:\users\administrator\desktop\win-pvdrivers\xenscsi
+OBJ_PATH=c:\users\administrator\desktop\win-pvdrivers\xenscsi
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0

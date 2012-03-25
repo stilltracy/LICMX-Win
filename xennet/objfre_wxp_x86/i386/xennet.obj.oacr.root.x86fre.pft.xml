@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+<OACRDEFECTCOUNT>1</OACRDEFECTCOUNT>
+<OACRERRORCOUNT>0</OACRERRORCOUNT>
+<DEFECT _seq="1"><SFA><LINE>641</LINE><COLUMN>33</COLUMN><FILENAME>xennet5.c</FILENAME><FILEPATH>c:\users\administrator\desktop\win-pvdrivers\xennet\</FILEPATH></SFA><DEFECTCODE>28155</DEFECTCODE><DESCRIPTION>The function being assigned or passed should be a KDEFERRED_ROUTINE function:  Add the declaration 'KDEFERRED_ROUTINE XenNet_RxTxDpc;' before the current first declaration of XenNet_RxTxDpc.</DESCRIPTION><FUNCTION>XenNet_Init</FUNCTION><FUNCLINE>496</FUNCLINE><PATH/></DEFECT>
+</DEFECTS>

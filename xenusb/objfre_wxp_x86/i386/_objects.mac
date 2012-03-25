@@ -1,0 +1,22 @@
+
+
+386_OBJECTS=\
+ $(OBJ_PATH)\$O\xenusb.obj \
+ $(OBJ_PATH)\$O\xenusb_fdo.obj \
+ $(OBJ_PATH)\$O\xenusb_hub.obj \
+ $(OBJ_PATH)\$O\xenusb_huburb.obj \
+ $(OBJ_PATH)\$O\xenusb_devurb.obj \
+ $(OBJ_PATH)\$O\xenusb_decode.obj \
+
+
+_RES_FILE=$(OBJ_PATH)\$O\xenusb.res
+
+
+
+# lowercased
+BASEDIR=d:\winddk\7600.16385.1
+OBJECT_ROOT=d:\winddk\7600.16385.1
+MAKEDIR_LOWERCASE=c:\users\administrator\desktop\win-pvdrivers\xenusb
+OBJ_PATH=c:\users\administrator\desktop\win-pvdrivers\xenusb
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0

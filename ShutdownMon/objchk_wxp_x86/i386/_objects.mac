@@ -1,0 +1,16 @@
+
+
+386_OBJECTS=\
+ $(OBJ_PATH)\$O\shutdownmon.obj \
+
+
+
+
+
+# lowercased
+BASEDIR=d:\winddk\7600.16385.1
+OBJECT_ROOT=d:\winddk\7600.16385.1
+MAKEDIR_LOWERCASE=c:\users\administrator\desktop\win-pvdrivers\shutdownmon
+OBJ_PATH=c:\users\administrator\desktop\win-pvdrivers\shutdownmon
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0
