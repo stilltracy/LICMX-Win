@@ -4,7 +4,7 @@ Class=SCSIAdapter
 ClassGuid={4D36E97B-E325-11CE-BFC1-08002BE10318}
 Provider=%XenGplPv%
 CatalogFile="xenscsi.cat"
-DriverVer=03/25/2012,0.11.0.9
+DriverVer=04/08/2012,0.11.0.84
 
 [DestinationDirs]
 DefaultDestDir = 12

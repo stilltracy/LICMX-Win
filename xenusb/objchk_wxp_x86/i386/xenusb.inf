@@ -6,7 +6,7 @@ Provider=%XenGplPv%
 CatalogFile="xenusb.cat"
 DriverPackageType=PlugAndPlay
 DriverPackageDisplayName=%XenUSB.DRVDESC%
-DriverVer=03/25/2012,0.11.0.9
+DriverVer=04/08/2012,0.11.0.84
 
 [DestinationDirs]
 DefaultDestDir = 12

@@ -379,6 +379,7 @@ typedef struct {
 #define XEN_INIT_TYPE_EVENT_CHANNEL_DPC         16
 #define XEN_INIT_TYPE_QEMU_HIDE_FLAGS           17 /* qemu hide flags */
 #define XEN_INIT_TYPE_QEMU_HIDE_FILTER          18 /* qemu device hidden by class filter */
+
 /*
  state maps consist of 3 bytes: (maximum of 4 x 3 bytes)
   front - state to set frontend to
@@ -390,6 +391,7 @@ typedef struct {
 #define XEN_INIT_TYPE_XB_STATE_MAP_POST_CONNECT 20
 #define XEN_INIT_TYPE_XB_STATE_MAP_SHUTDOWN     21
 
+#define XEN_INIT_TYPE_COLOR_INIT 22
 static __inline VOID
 __ADD_XEN_INIT_UCHAR(PUCHAR *ptr, UCHAR val)
 {

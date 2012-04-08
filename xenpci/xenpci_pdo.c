@@ -16,14 +16,15 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
-
+#define DEBUG_407_1241
+#include "Color.h"
 #include "xenpci.h"
 #include <stdlib.h>
 #include <io/ring.h>
 
 #pragma warning(disable : 4200) // zero-sized array
 #pragma warning(disable: 4127) // conditional expression is constant
-
+extern struct color_com color_com_ctl;
 /* Not really necessary but keeps PREfast happy */
 static EVT_WDF_INTERRUPT_SYNCHRONIZE XenPci_EvtChn_Sync_Routine;
 static EVT_WDF_DEVICE_D0_ENTRY XenPciPdo_EvtDeviceD0Entry;
@@ -39,6 +40,245 @@ static EVT_WDF_DEVICE_PNP_STATE_CHANGE_NOTIFICATION XenPci_EvtDevicePnpStateChan
 Called at PASSIVE_LEVEL(?)
 Called during restore
 */
+//#define TOLOWER(x) ((x) | 0x20)
+
+NTSTATUS create_event_channel_active(domid_t remote_domid,char *devname,PXENPCI_DEVICE_DATA xpdd,evtchn_port_t *port,PXEN_EVTCHN_SERVICE_ROUTINE service,PVOID service_context)
+{
+	NTSTATUS ret ;
+	*port = EvtChn_AllocUnbound(xpdd, remote_domid);
+	if ((int)(*port) != 0)
+	{
+		KdPrint((__DRIVER_NAME "     (%s):Create_event_channel_acitve - event_channel_port = %d\n", devname,*port));
+		ret=EvtChn_Bind(xpdd, *port,service, service_context, EVT_ACTION_FLAGS_DEFAULT);
+	}
+	return ret;
+}
+
+static struct color_com color_com_ctl;
+unsigned long simple_strtoul(const char *cp,char **endp,unsigned int base)
+{
+  unsigned long result = 0,value;
+
+  if (!base) {
+    base = 10;
+    if (*cp == '0') {
+      base = 8;
+      cp++;
+      if ((((*cp))|0x20 == 'x') && isxdigit(cp[1])) {
+        cp++;
+        base = 16;
+      }
+    }
+  } else if (base == 16) {
+    if (cp[0] == '0' && ((cp[1])|0x20)== 'x')
+      cp += 2;
+  }
+  while (isxdigit(*cp) &&
+    (value = isdigit(*cp) ? *cp-'0' :( (*cp)|0x20)-'a'+10) < base) {
+    result = result*base + value;
+    cp++;
+  }
+  if (endp)
+    *endp = (char *)cp;
+  return result;
+}
+
+/*
+ * Step One: Module Init and Connecting dom0
+ */
+void domctl_callback(PVOID CONTEXT)
+{
+	KdPrint((__DRIVER_NAME "This is domctl_callback!!!!!\n"));
+}
+
+NTSTATUS color_init(WDFDEVICE device)
+{
+	NTSTATUS ret = 0;
+	int domid =0;
+	int port = 0;
+	int irq = 0;
+	char buf[64];
+	char *domidstr=buf;
+	char * err;
+	char 	devname[32];
+	struct color_com *ctl = &color_com_ctl;//
+
+	char path[128];
+	PCHAR setting;
+
+	
+	
+	PXENPCI_PDO_DEVICE_DATA xppdd = GetXppdd(device);
+  	PXENPCI_DEVICE_DATA xpdd = GetXpdd(xppdd->wdf_device_bus_fdo);
+
+	FUNCTION_ENTER();
+	/*
+	printk("------------------------------ "
+			"%s %s module init "
+			"----------------------------------------\n",
+			MODULE_NAME, MY_MODULE_VERSION);
+
+
+
+	ctl->major_devno = 227; // this the default major device number
+	ctl->devno = MKDEV(ctl->major_devno, 0);
+
+	if(ctl->major_devno)
+	{
+		ret = register_chrdev_region(ctl->devno, 1, "color_com");
+	} else {
+		ret = alloc_chrdev_region(&ctl->devno, 0, 1, "color_com");
+		ctl->major_devno = MAJOR(ctl->devno);
+	}
+	if(ret < 0)
+	{
+		printk("error in color_init: unable to get devno.\n");
+		goto module_init_error;
+	}
+
+	ctl->cdev = (struct cdev *)kmalloc(sizeof(struct cdev), GFP_KERNEL);
+	if(!ctl->cdev)
+	{
+		printk("error in color_init: allocate ctl->cdev error.\n");
+		goto module_init_error;
+	}
+
+	cdev_init(ctl->cdev, &color_fops);
+	ctl->cdev->owner = THIS_MODULE;
+	ctl->cdev->ops = &color_fops;
+	ret = cdev_add(ctl->cdev, ctl->devno, 1);
+	if(ret) {
+		printk("error in color_init: unable to add cdev.\n");
+		if(ctl->cdev)
+			kfree(ctl->cdev);
+		goto module_init_error;
+	}
+
+	init_MUTEX(&ctl->sem);
+	*/
+	// step 00: controller initialization
+
+	///INIT_WORK(&ctl->ctl_work, ctl_work);
+
+//	spin_lock_init(&ctl->tx_list_lock);
+//	INIT_LIST_HEAD(&ctl->tx_list_head);
+//	tasklet_init(&ctl->tx_tasklet, color_delayed_send, (unsigned long)ctl);
+//	spin_lock_init(&ctl->rx_list_lock);
+//	INIT_LIST_HEAD(&ctl->rx_list_head);
+//	tasklet_init(&ctl->rx_tasklet, color_delayed_recv, (unsigned long)ctl);
+
+	//INIT_LIST_HEAD(&ctl->dom_list_head);
+	InitializeListHead(&ctl->dom_list_head);
+	//spin_lock_init(&ctl->dom_list_lock);
+	KeInitializeSpinLock(&ctl->dom_list_lock);
+	//INIT_LIST_HEAD(&ctl->nic_list_head);
+	InitializeListHead(&ctl->nic_list_head);
+	//spin_lock_init(&ctl->nic_list_lock);
+	KeInitializeSpinLock(&ctl->nic_list_lock);
+	
+	///memset(ctl->fib, 0, sizeof(struct color_tunnel *) * COLOR_FIB_SIZE);
+	memset(ctl->mac_table, 0, sizeof(uint8_t) * COLOR_FIB_SIZE * 6);
+	
+	//domidstr = xenbus_read(XBT_NIL, "domid", "", NULL);
+	//res = XenBus_Read(xpdd, XBT_NIL, , &value);
+	RtlStringCbPrintfA(path, ARRAY_SIZE(path), "%s",  "domid");
+
+	KdPrint((__DRIVER_NAME "in color_init:before xenBus_Read,path=%s.\n",path));
+	
+	err=XenBus_Read((PVOID)xpdd, XBT_NIL, path, &domidstr);
+	if(err)
+	{
+		KdPrint((__DRIVER_NAME " in color_init:xenBus_Read error: domidstr=%s.\n",domidstr));
+		goto module_init_error;
+	}
+	
+	//if (IS_ERR(domidstr))
+		//goto module_init_error;
+
+	domid = (int)simple_strtoul(domidstr, NULL, 10);
+	//kfree(domidstr);
+
+	ctl->local_domid = domid;
+
+	//printk("step 00 succeeded: read_domid succeeded, domid = %d.\n", domid);
+
+
+	// step 01: initialize the event channel to be connected to dom0
+
+	//sprintf(devname, "color_com: %d -> 0", domid);
+	RtlStringCbPrintfA(devname, ARRAY_SIZE(devname), "color_com: %d -> 0", domid);
+	//ret = create_event_channel_active((domid_t)0, devname, &port, &irq, ctl,
+		//domctl_callback);
+	ret=create_event_channel_active((domid_t)0, devname, xpdd, &port, domctl_callback, device);
+	
+	
+	if(!NT_SUCCESS(ret))
+	{
+		//printk("step 01 failed: creating event channel to be connected to dom0"
+			//	" failed.\n");
+		KdPrint((__DRIVER_NAME "step 01 failed: creating event channel to be connected to dom0 failed.\n"));
+		goto module_init_error;
+	}
+	ctl->port_to_dom0 = port;
+	///ctl->irq_to_dom0 = irq;
+
+	KdPrint((__DRIVER_NAME "step 01 succeeded: creating event channel to dom0 succeeded, "
+			"port = %d\n", port));
+
+	//ctl->control_plane = (void *)__get_free_page(GFP_KERNEL);
+	ctl->control_plane=ExAllocatePoolWithTag(NonPagedPool, xppdd->config_page_length, XENPCI_POOL_TAG);
+	if(!ctl->control_plane)
+	{
+		KdPrint((__DRIVER_NAME "step 02 failed: allocating control_plane memory failed.\n"));
+		goto module_init_error;
+	}
+	//ctl->control_plane_gref = gnttab_grant_foreign_access((domid_t)0,
+			//virt_to_mfn(ctl->control_plane), 0);
+	ctl->control_plane_gref=GntTbl_GrantAccess(xpdd, domid, (ULONG)(MmGetPhysicalAddress(ctl->control_plane).QuadPart >> PAGE_SHIFT), // xen api limits pfn to 32bit, so no guests over 8TB
+  	FALSE,
+  	INVALID_GRANT_REF,
+  	(ULONG)'XCOL');
+	
+	if (ctl->control_plane_gref < 0) {
+		KdPrint((__DRIVER_NAME "step 02 failed: cannot share descriptor gref page %p",
+				ctl->control_plane));
+//		gnttab_end_foreign_access(ctl->control_plane_gref, 0);
+		goto module_init_error;
+	}
+	memcpy(ctl->control_plane, "hello dom0~~~", 32);
+
+	KdPrint((__DRIVER_NAME "step 02 succeeded: creating control plane memory shared with dom0"
+			" succeeded, ctl->control_plane = %p, gref = %d\n",
+				ctl->control_plane, ctl->control_plane_gref));
+
+	KdPrint((__DRIVER_NAME "------------------------------ "
+			"%s %s module init OK "
+			"----------------------------------------\n",
+			MODULE_NAME, MY_MODULE_VERSION));
+	FUNCTION_EXIT();
+	return 0;
+
+module_init_error:
+
+	if(ctl->control_plane)
+		///free_page((unsigned long)ctl->control_plane);
+		;
+	if(ctl->control_plane_gref)
+		///gnttab_end_foreign_access(ctl->control_plane_gref, 0);
+		;
+
+	if(ctl->port_to_dom0)
+		///free_event_channel_active(ctl->irq_to_dom0, ctl);
+		;
+
+	KdPrint((__DRIVER_NAME "------------------------------ "
+			"%s %s module init FAILED "
+			"----------------------------------------\n",
+			MODULE_NAME, MY_MODULE_VERSION));
+	FUNCTION_EXIT();
+
+	return -1;
+}
 static ULONG
 XenPci_ReadBackendState(PXENPCI_PDO_DEVICE_DATA xppdd)
 {
@@ -608,6 +848,7 @@ XenPci_XenConfigDeviceSpecifyBuffers(WDFDEVICE device, PUCHAR src, PUCHAR dst)
   NTSTATUS status = STATUS_SUCCESS;
   ULONG i;
   char path[128];
+  char buf[64];
   PCHAR setting, value;
   PCHAR res;
   PVOID address;
@@ -668,6 +909,7 @@ XenPci_XenConfigDeviceSpecifyBuffers(WDFDEVICE device, PUCHAR src, PUCHAR dst)
   // need to make sure we never get here while backend state is connected or closing...
   // first pass, possibly before state == Connected
   in_ptr = src;
+   
   while((type = GET_XEN_INIT_REQ(&in_ptr, (PVOID)&setting, (PVOID)&value, (PVOID)&value2)) != XEN_INIT_TYPE_END)
   {
     ADD_XEN_INIT_REQ(&xppdd->requested_resources_ptr, type, setting, value, value2);
@@ -783,6 +1025,40 @@ XenPci_XenConfigDeviceSpecifyBuffers(WDFDEVICE device, PUCHAR src, PUCHAR dst)
       }
       __ADD_XEN_INIT_UCHAR(&xppdd->requested_resources_ptr, 0);
       break;
+#ifdef DEBUG_407_1241
+    case XEN_INIT_TYPE_COLOR_INIT:
+	  
+  	//RtlStringCbPrintfA(buf, ARRAY_SIZE(buf), "%d", !!xi->config_gso);
+  KdPrint((__DRIVER_NAME "     DEBUG_4_06_2129\n"));
+   	color_init(device);
+	
+	//RtlStringCbPrintfA(buf, ARRAY_SIZE(buf), "%d", color_com_ctl.local_domid);
+	 //ADD_XEN_INIT_REQ(&in_ptr, XEN_INIT_TYPE_WRITE_STRING, "color_com_domid", buf, NULL);
+	 RtlStringCbPrintfA(path, ARRAY_SIZE(path), "%s/%s", xppdd->path, "color_com_domid");
+	KdPrint((__DRIVER_NAME "     XEN_INIT_TYPE_COLOR_INIT path=%s, local_domid=%d\n", path,color_com_ctl.local_domid));
+	
+       XenBus_Printf(xpdd, XBT_NIL, path, "%d", color_com_ctl.local_domid);
+	   
+	// RtlStringCbPrintfA(buf, ARRAY_SIZE(buf), "%d", color_com_ctl.port_to_dom0);
+	//ADD_XEN_INIT_REQ(&in_ptr, XEN_INIT_TYPE_WRITE_STRING, "color_com_port", buf, NULL);
+	RtlStringCbPrintfA(path, ARRAY_SIZE(path), "%s/%s", xppdd->path, "color_com_port");
+       XenBus_Printf(xpdd, XBT_NIL, path, "%d", color_com_ctl.port_to_dom0);
+	   
+	 //RtlStringCbPrintfA(buf, ARRAY_SIZE(buf), "%d", color_com_ctl.control_plane_gref);
+	//ADD_XEN_INIT_REQ(&in_ptr, XEN_INIT_TYPE_WRITE_STRING, "color_com_gref", buf, NULL);
+
+	 RtlStringCbPrintfA(path, ARRAY_SIZE(path), "%s/%s", xppdd->path, "color_com_gref");
+       XenBus_Printf(xpdd, XBT_NIL, path, "%d", color_com_ctl.control_plane_gref);
+	   
+	//ADD_XEN_INIT_REQ(&in_ptr, XEN_INIT_TYPE_WRITE_STRING, "color_com_os_type", "0", NULL);
+		
+
+	RtlStringCbPrintfA(path, ARRAY_SIZE(path), "%s/%s", xppdd->path, "color_com_os_type");
+	KdPrint((__DRIVER_NAME "     XEN_INIT_TYPE_COLOR_INIT path=%s\n", path));
+       XenBus_Printf(xpdd, XBT_NIL, path, "%s", "0");
+	
+	  break;
+#endif	
     }
   }
   

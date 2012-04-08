@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
-#define DEBUG_323_2337
+#define DEBUG_407_1241
 #include <stdlib.h>
 #include <io/xenbus.h>
 #include "xennet5.h"
@@ -430,14 +430,7 @@ XenNet_D0Entry(struct xennet_info *xi)
   ADD_XEN_INIT_REQ(&ptr, XEN_INIT_TYPE_WRITE_STRING, "feature-sg", buf, NULL);
   RtlStringCbPrintfA(buf, ARRAY_SIZE(buf), "%d", !!xi->config_gso);
   ADD_XEN_INIT_REQ(&ptr, XEN_INIT_TYPE_WRITE_STRING, "feature-gso-tcpv4", buf, NULL);
-  #ifdef DEBUG_323_2337
-  	//RtlStringCbPrintfA(buf, ARRAY_SIZE(buf), "%d", !!xi->config_gso);
-  KdPrint((__DRIVER_NAME "     DEBUG_323_2327\n"));
-	 ADD_XEN_INIT_REQ(&ptr, XEN_INIT_TYPE_WRITE_STRING, "color_com_domid", "1", NULL);
-	ADD_XEN_INIT_REQ(&ptr, XEN_INIT_TYPE_WRITE_STRING, "color_com_port", "1127", NULL);
-	ADD_XEN_INIT_REQ(&ptr, XEN_INIT_TYPE_WRITE_STRING, "color_com_gref", "1000001", NULL);
-	ADD_XEN_INIT_REQ(&ptr, XEN_INIT_TYPE_WRITE_STRING, "color_com_os_type", "0", NULL);
-#endif
+ 
   ADD_XEN_INIT_REQ(&ptr, XEN_INIT_TYPE_XB_STATE_MAP_PRE_CONNECT, NULL, NULL, NULL);
   __ADD_XEN_INIT_UCHAR(&ptr, 0); /* no pre-connect required */
   ADD_XEN_INIT_REQ(&ptr, XEN_INIT_TYPE_XB_STATE_MAP_POST_CONNECT, NULL, NULL, NULL);
@@ -456,6 +449,10 @@ XenNet_D0Entry(struct xennet_info *xi)
   __ADD_XEN_INIT_UCHAR(&ptr, XenbusStateInitWait);
   __ADD_XEN_INIT_UCHAR(&ptr, 50);
   __ADD_XEN_INIT_UCHAR(&ptr, 0);
+#ifdef DEBUG_407_1241
+	ADD_XEN_INIT_REQ(&ptr, XEN_INIT_TYPE_COLOR_INIT, NULL, NULL, NULL);
+#endif
+  
   ADD_XEN_INIT_REQ(&ptr, XEN_INIT_TYPE_END, NULL, NULL, NULL);
 
   status = xi->vectors.XenPci_XenConfigDevice(xi->vectors.context);

@@ -16,7 +16,7 @@ _RES_FILE=$(OBJ_PATH)\$O\xenusb.res
 # lowercased
 BASEDIR=d:\winddk\7600.16385.1
 OBJECT_ROOT=d:\winddk\7600.16385.1
-MAKEDIR_LOWERCASE=c:\users\administrator\desktop\win-pvdrivers\xenusb
-OBJ_PATH=c:\users\administrator\desktop\win-pvdrivers\xenusb
+MAKEDIR_LOWERCASE=c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb
+OBJ_PATH=c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb
 CONCURRENT_MIDL=0
 CONCURRENT_MANIFEST_BUILD=0

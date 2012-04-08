@@ -2,5 +2,5 @@
 <DEFECTS>
 <OACRDEFECTCOUNT>1</OACRDEFECTCOUNT>
 <OACRERRORCOUNT>0</OACRERRORCOUNT>
-<DEFECT _seq="1"><SFA><LINE>1607</LINE><COLUMN>20</COLUMN><FILENAME>xenvbd_scsiport.c</FILENAME><FILEPATH>c:\users\administrator\desktop\win-pvdrivers\xenvbd\</FILEPATH></SFA><DEFECTCODE>28159</DEFECTCODE><DESCRIPTION>Consider using 'error logging or driver shutdown' instead of 'KeBugCheckEx'. Reason: Whenever possible, all kernel-mode components should log an error and continue to run, rather than calling KeBugCheckEx.</DESCRIPTION><FUNCTION>XenVbd_HwScsiAdapterControl</FUNCTION><FUNCLINE>1578</FUNCLINE><PATH/></DEFECT>
+<DEFECT _seq="1"><SFA><LINE>1607</LINE><COLUMN>20</COLUMN><FILENAME>xenvbd_scsiport.c</FILENAME><FILEPATH>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\</FILEPATH></SFA><DEFECTCODE>28159</DEFECTCODE><DESCRIPTION>Consider using 'error logging or driver shutdown' instead of 'KeBugCheckEx'. Reason: Whenever possible, all kernel-mode components should log an error and continue to run, rather than calling KeBugCheckEx.</DESCRIPTION><FUNCTION>XenVbd_HwScsiAdapterControl</FUNCTION><FUNCLINE>1578</FUNCLINE><PATH/></DEFECT>
 </DEFECTS>

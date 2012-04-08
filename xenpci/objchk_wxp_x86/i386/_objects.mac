@@ -24,7 +24,7 @@ _RES_FILE=$(OBJ_PATH)\$O\xenpci.res
 # lowercased
 BASEDIR=d:\winddk\7600.16385.1
 OBJECT_ROOT=d:\winddk\7600.16385.1
-MAKEDIR_LOWERCASE=c:\users\administrator\desktop\win-pvdrivers\xenpci
-OBJ_PATH=c:\users\administrator\desktop\win-pvdrivers\xenpci
+MAKEDIR_LOWERCASE=c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci
+OBJ_PATH=c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci
 CONCURRENT_MIDL=0
 CONCURRENT_MANIFEST_BUILD=0

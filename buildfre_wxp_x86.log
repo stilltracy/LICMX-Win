@@ -1,170 +1,34 @@
-BUILD: Examining c:\users\administrator\desktop\win-pvdrivers directory tree for files to compile.
+BUILD: Examining c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25 directory tree for files to compile.
 oacr invalidate root:x86fre /autocleanqueue
-1>Compiling (NoSync) c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel *************
+1>Compiling (NoSync) c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel *************
 1>'nmake.exe /nologo BUILDMSG=Stop. -i /nologo /f d:\winddk\7600.16385.1\bin\makefile.def BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-1>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel
-2>Compiling (NoSync) c:\users\administrator\desktop\win-pvdrivers\xenpci *************
+1>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel
+2>Compiling (NoSync) c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci *************
 2>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-2>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenpci
-3>Compiling (NoSync) c:\users\administrator\desktop\win-pvdrivers\xenvbd *************
+2>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci
+3>Compiling (NoSync) c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd *************
 3>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-3>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenvbd
-4>Compiling (NoSync) c:\users\administrator\desktop\win-pvdrivers\xennet *************
+3>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd
+4>Compiling (NoSync) c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet *************
 4>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-4>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xennet
-2>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-3>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel: TARGETPATH is ../../bin/
+4>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel: TARGETPATH is ../../bin/
 1>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
 4>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-2> ml /safeseh /c /coff /Cx /nologo /Ii386\ /I. /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9 /ID:\WinDDK\7600.16385.1\inc\crt /Zm  /Zi /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1 /DDBG=0  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /Foc:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\tpr_emulate.obj i386\tpr_emulate.asm
-3> rc.exe -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""xenvbd.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo c:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386\xenvbd.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /DNDEBUG /D_DLL=1 /DNDEBUG  -DBUILD_NUMBER=9 -DWIN_KERNEL_BUILD -D_GPLPV_SCSIPORT /DNTDDI_VERSION=0x05010200   /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\crt .\xenvbd.rc
+2>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+3>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+2> ml /safeseh /c /coff /Cx /nologo /Ii386\ /I. /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9 /ID:\WinDDK\7600.16385.1\inc\crt /Zm  /Zi /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1 /DDBG=0  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /Foc:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\tpr_emulate.obj i386\tpr_emulate.asm
+4> rc.exe -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""xennet.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /DNDEBUG /D_DLL=1 /DNDEBUG  -DBUILD_NUMBER=84 -DWIN_KERNEL_BUILD -D_GPLPV_NDIS5 /DNTDDI_VERSION=0x05010200   /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\crt .\xennet.rc
+1> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\cl.rsp
 2> Assembling: i386\tpr_emulate.asm
-2> ml /safeseh /c /coff /Cx /nologo /Ii386\ /I. /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9 /ID:\WinDDK\7600.16385.1\inc\crt /Zm  /Zi /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1 /DDBG=0  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /Foc:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\dbgprint_hook.obj i386\dbgprint_hook.asm
-3>Microsoft (R) Windows (R) Resource Compiler Version 6.1.6908.0
-3>Copyright (C) Microsoft Corporation.  All rights reserved.
-3> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386\cl.rsp
+2> ml /safeseh /c /coff /Cx /nologo /Ii386\ /I. /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9 /ID:\WinDDK\7600.16385.1\inc\crt /Zm  /Zi /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1 /DDBG=0  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /Foc:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\dbgprint_hook.obj i386\dbgprint_hook.asm
 2> Assembling: i386\dbgprint_hook.asm
-2> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\cl.rsp
-1> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\cl.rsp
-3>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
-3>Copyright (C) Microsoft Corporation.  All rights reserved.
-3>cl /Fo"c:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386/"
-3> /FC
-3> /Ii386
-3> /I.
-3> /I..\common\include
-3> /I..\common\include\public
-3> /I..\liblfds.6\inc
-3> /Ic:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386
-3> /ID:\WinDDK\7600.16385.1\inc\api
-3> /ID:\WinDDK\7600.16385.1\inc\api
-3> /ID:\WinDDK\7600.16385.1\inc\ddk
-3> /ID:\WinDDK\7600.16385.1\inc\ddk
-3> /ID:\WinDDK\7600.16385.1\inc\crt
-3> /D_X86_=1
-3> /Di386=1
-3> /DSTD_CALL
-3> /DCONDITION_HANDLING=1
-3> /DNT_UP=1
-3> /DNT_INST=0
-3> /DWIN32=100
-3> /D_NT1X_=100
-3> /DWINNT=1
-3> /D_WIN32_WINNT=0x0501
-3> /DWINVER=0x0501
-3> /D_WIN32_IE=0x0603
-3> /DWIN32_LEAN_AND_MEAN=1
-3> /DDEVL=1
-3> /D__BUILDMACHINE__=WinDDK
-3> /DFPO=0
-3> /DNDEBUG
-3> /D_DLL=1
-3> /DNDEBUG
-3> -DBUILD_NUMBER=9
-3> -DWIN_KERNEL_BUILD
-3> -D_GPLPV_SCSIPORT
-3> /DNTDDI_VERSION=0x05010200
-3> /c
-3> /Zc:wchar_t-
-3> /Zl
-3> /Zp8
-3> /Gy
-3> /Gm-
-3> -cbstring
-3> /W4
-3> /WX
-3> /Gz
-3> /hotpatch
-3> /EHs-c-
-3> /GR-
-3> /GF
-3> /GS
-2>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
-3> /Zi
-2>Copyright (C) Microsoft Corporation.  All rights reserved.
-3> /Oxs
-4> rc.exe -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""xennet.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /DNDEBUG /D_DLL=1 /DNDEBUG  -DBUILD_NUMBER=9 -DWIN_KERNEL_BUILD -D_GPLPV_NDIS5 /DNTDDI_VERSION=0x05010200   /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\crt .\xennet.rc
-3> /Oy-
-3> /Zi
-3> /Fdc:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386\
-3> /DKMDF_MAJOR_VERSION_STRING=01
-3> /DKMDF_MINOR_VERSION_STRING=009
-3> /wd4603
-3> /wd4627
-3> /typedil-
-3> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
-3> .\xenvbd.c 
-3>xenvbd.c
-2>cl /Fo"c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386/"
-2> /FC
-2> /Ii386
-2> /I.
-2> /I..\common\include
-2> /I..\common\include\public
-2> /I..\liblfds.6\inc
-2> /Ic:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386
-2> /ID:\WinDDK\7600.16385.1\inc\api
-2> /ID:\WinDDK\7600.16385.1\inc\api
-2> /ID:\WinDDK\7600.16385.1\inc\ddk
-2> /ID:\WinDDK\7600.16385.1\inc\ddk
-2> /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9
-2> /ID:\WinDDK\7600.16385.1\inc\crt
-2> /D_X86_=1
-2> /Di386=1
-2> /DSTD_CALL
-2> /DCONDITION_HANDLING=1
-2> /DNT_UP=1
-2> /DNT_INST=0
-2> /DWIN32=100
-2> /D_NT1X_=100
+2> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\cl.rsp
+4>Microsoft (R) Windows (R) Resource Compiler Version 6.1.6908.0
+4>Copyright (C) Microsoft Corporation.  All rights reserved.
 1>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
 1>Copyright (C) Microsoft Corporation.  All rights reserved.
-2> /DWINNT=1
-2> /D_WIN32_WINNT=0x0501
-2> /DWINVER=0x0501
-2> /D_WIN32_IE=0x0603
-2> /DWIN32_LEAN_AND_MEAN=1
-2> /DDEVL=1
-2> /D__BUILDMACHINE__=WinDDK
-2> /DFPO=0
-2> /DNDEBUG
-2> /D_DLL=1
-2> /DNDEBUG
-2> -DBUILD_NUMBER=9
-2> -DWIN_KERNEL_BUILD
-2> /DNTDDI_VERSION=0x05010200
-2> /c
-2> /Zc:wchar_t-
-2> /Zl
-2> /Zp8
-2> /Gy
-2> /Gm-
-2> -cbstring
-2> /W4
-2> /WX
-2> /Gz
-2> /hotpatch
-2> /EHs-c-
-2> /GR-
-2> /GF
-2> /GS
-2> /Zi
-2> /Oxs
-2> /Oy-
-2> /Zi
-2> /Fdc:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\
-2> /DKMDF_MAJOR_VERSION=1
-2> /DKMDF_MINOR_VERSION=9
-2> /DKMDF_MAJOR_VERSION_STRING=01
-2> /DKMDF_MINOR_VERSION_STRING=009
-2> /wd4603
-2> /wd4627
-2> /typedil-
-2> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
-2> .\xenpci.c .\xenpci_fdo.c .\xenpci_pdo.c .\evtchn.c .\gnttbl.c .\xenbus.c .\memory.c .\xenpci_device_interface.c .\xenbus_device_interface.c .\xenpci_highsync.c .\xenpci_patch_kernel.c .\xenpci_dbgprint.c 
-2>xenpci.c
-1>cl /Fo"c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386/"
+1>cl /Fo"c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386/"
 1> /FC
 1> /MT
 1> /U_MT
@@ -172,10 +36,8 @@ oacr invalidate root:x86fre /autocleanqueue
 1> /I.
 1> /I..
 1> /I../../inc/
-1> /Ic:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386
+1> /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386
 1> /ID:\WinDDK\7600.16385.1\inc\api
-4>Microsoft (R) Windows (R) Resource Compiler Version 6.1.6908.0
-4>Copyright (C) Microsoft Corporation.  All rights reserved.
 1> /ID:\WinDDK\7600.16385.1\inc\api
 1> /ID:\WinDDK\7600.16385.1\inc\ddk
 1> /ID:\WinDDK\7600.16385.1\inc\ddk
@@ -187,7 +49,6 @@ oacr invalidate root:x86fre /autocleanqueue
 1> /DNT_UP=1
 1> /DNT_INST=0
 1> /DWIN32=100
-4> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\cl.rsp
 1> /D_NT1X_=100
 1> /DWINNT=1
 1> /D_WIN32_WINNT=0x0501
@@ -198,6 +59,7 @@ oacr invalidate root:x86fre /autocleanqueue
 1> /D__BUILDMACHINE__=WinDDK
 1> /DFPO=0
 1> /DNDEBUG
+4> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\cl.rsp
 1> /DNTDDI_VERSION=0x05010200
 1> /c
 1> /Zc:wchar_t-
@@ -212,6 +74,7 @@ oacr invalidate root:x86fre /autocleanqueue
 1> /Gz
 1> /hotpatch
 1> /EHs-c-
+3> rc.exe -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""xenvbd.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386\xenvbd.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /DNDEBUG /D_DLL=1 /DNDEBUG  -DBUILD_NUMBER=84 -DWIN_KERNEL_BUILD -D_GPLPV_SCSIPORT /DNTDDI_VERSION=0x05010200   /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\crt .\xenvbd.rc
 1> /GR-
 1> /GF
 1> /GS
@@ -228,16 +91,87 @@ oacr invalidate root:x86fre /autocleanqueue
 1> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
 1> .\abstraction_aligned_free.c .\abstraction_aligned_malloc.c .\abstraction_cas.c .\abstraction_dcas.c .\abstraction_increment.c .\freelist_delete.c .\freelist_get_and_set.c .\freelist_new.c .\freelist_pop_push.c .\freelist_query.c .\queue_delete.c .\queue_new.c .\queue_query.c .\queue_queue.c .\ringbuffer_delete.c .\ringbuffer_get_and_put.c .\ringbuffer_new.c .\ringbuffer_query.c .\slist_delete.c .\slist_get_and_set.c .\slist_link.c .\slist_new.c .\stack_delete.c .\stack_new.c .\stack_push_pop.c .\stack_query.c 
 1>abstraction_aligned_free.c
+2>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
+2>Copyright (C) Microsoft Corporation.  All rights reserved.
+2>cl /Fo"c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386/"
+2> /FC
+2> /Ii386
+2> /I.
+2> /I..\common\include
+2> /I..\common\include\public
+2> /I..\liblfds.6\inc
+2> /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386
+2> /ID:\WinDDK\7600.16385.1\inc\api
+2> /ID:\WinDDK\7600.16385.1\inc\api
+2> /ID:\WinDDK\7600.16385.1\inc\ddk
+2> /ID:\WinDDK\7600.16385.1\inc\ddk
+2> /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9
+2> /ID:\WinDDK\7600.16385.1\inc\crt
+2> /D_X86_=1
+2> /Di386=1
+2> /DSTD_CALL
+2> /DCONDITION_HANDLING=1
+2> /DNT_UP=1
+2> /DNT_INST=0
+2> /DWIN32=100
+2> /D_NT1X_=100
+2> /DWINNT=1
+2> /D_WIN32_WINNT=0x0501
+2> /DWINVER=0x0501
+2> /D_WIN32_IE=0x0603
+2> /DWIN32_LEAN_AND_MEAN=1
+2> /DDEVL=1
+2> /D__BUILDMACHINE__=WinDDK
+2> /DFPO=0
+2> /DNDEBUG
+2> /D_DLL=1
+2> /DNDEBUG
+2> -DBUILD_NUMBER=84
+2> -DWIN_KERNEL_BUILD
+2> /DNTDDI_VERSION=0x05010200
+2> /c
+2> /Zc:wchar_t-
+2> /Zl
+2> /Zp8
+2> /Gy
+2> /Gm-
+2> -cbstring
+2> /W1
+2> /WX
+2> /Gz
+2> /hotpatch
+2> /EHs-c-
+2> /GR-
+2> /GF
+2> /GS
+2> /Zi
+2> /Oxs
+2> /Oy-
+2> /Zi
+2> /Fdc:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\
+2> /DKMDF_MAJOR_VERSION=1
+2> /DKMDF_MINOR_VERSION=9
+2> /DKMDF_MAJOR_VERSION_STRING=01
+2> /DKMDF_MINOR_VERSION_STRING=009
+2> /wd4603
+2> /wd4627
+2> /typedil-
+2> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
+2> .\xenpci.c .\xenpci_fdo.c .\xenpci_pdo.c .\evtchn.c .\gnttbl.c .\xenbus.c .\memory.c .\xenpci_device_interface.c .\xenbus_device_interface.c .\xenpci_highsync.c .\xenpci_patch_kernel.c .\xenpci_dbgprint.c 
+2>xenpci.c
+3>Microsoft (R) Windows (R) Resource Compiler Version 6.1.6908.0
+3>Copyright (C) Microsoft Corporation.  All rights reserved.
+3> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386\cl.rsp
 4>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
 4>Copyright (C) Microsoft Corporation.  All rights reserved.
-4>cl /Fo"c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386/"
+4>cl /Fo"c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386/"
 4> /FC
 4> /Ii386
 4> /I.
 4> /I..\common\include
 4> /I..\common\include\public
 4> /I..\liblfds.6\inc
-4> /Ic:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386
+4> /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386
 4> /ID:\WinDDK\7600.16385.1\inc\api
 4> /ID:\WinDDK\7600.16385.1\inc\api
 4> /ID:\WinDDK\7600.16385.1\inc\ddk
@@ -262,7 +196,7 @@ oacr invalidate root:x86fre /autocleanqueue
 4> /DNDEBUG
 4> /D_DLL=1
 4> /DNDEBUG
-4> -DBUILD_NUMBER=9
+4> -DBUILD_NUMBER=84
 4> -DWIN_KERNEL_BUILD
 4> -D_GPLPV_NDIS5
 4> /DNTDDI_VERSION=0x05010200
@@ -285,7 +219,7 @@ oacr invalidate root:x86fre /autocleanqueue
 4> /Oxs
 4> /Oy-
 4> /Zi
-4> /Fdc:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\
+4> /Fdc:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\
 4> /DKMDF_MAJOR_VERSION_STRING=01
 4> /DKMDF_MINOR_VERSION_STRING=009
 4> /wd4603
@@ -295,38 +229,16 @@ oacr invalidate root:x86fre /autocleanqueue
 4> .\xennet.c .\xennet_tx.c .\xennet_rx.c .\xennet_oid.c .\xennet_common.c 
 4>xennet.c
 1>abstraction_aligned_malloc.c
-1>abstraction_cas.c
-2>xenpci_fdo.c
-4>xennet_tx.c
-1>abstraction_dcas.c
-1>abstraction_increment.c
-1>freelist_delete.c
-2>xenpci_pdo.c
-4>xennet_rx.c
-3>Compiling (NoSync) c:\users\administrator\desktop\win-pvdrivers\xenscsi *************
-3>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-3>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenscsi
-1>freelist_get_and_set.c
-3>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-1>freelist_new.c
-2>evtchn.c
-4>xennet_oid.c
-1>freelist_pop_push.c
-3> rc.exe -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""xenscsi.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo c:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386\xenscsi.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /DNDEBUG /D_DLL=1 /DNDEBUG  -DBUILD_NUMBER=9 -DWIN_KERNEL_BUILD /DNTDDI_VERSION=0x05010200   /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\crt .\xenscsi.rc
-3>Microsoft (R) Windows (R) Resource Compiler Version 6.1.6908.0
-3>Copyright (C) Microsoft Corporation.  All rights reserved.
-3> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386\cl.rsp
-1>freelist_query.c
 3>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
 3>Copyright (C) Microsoft Corporation.  All rights reserved.
-3>cl /Fo"c:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386/"
+3>cl /Fo"c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386/"
 3> /FC
 3> /Ii386
 3> /I.
 3> /I..\common\include
 3> /I..\common\include\public
 3> /I..\liblfds.6\inc
-3> /Ic:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386
+3> /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386
 3> /ID:\WinDDK\7600.16385.1\inc\api
 3> /ID:\WinDDK\7600.16385.1\inc\api
 3> /ID:\WinDDK\7600.16385.1\inc\ddk
@@ -351,7 +263,112 @@ oacr invalidate root:x86fre /autocleanqueue
 3> /DNDEBUG
 3> /D_DLL=1
 3> /DNDEBUG
-3> -DBUILD_NUMBER=9
+3> -DBUILD_NUMBER=84
+3> -DWIN_KERNEL_BUILD
+3> -D_GPLPV_SCSIPORT
+3> /DNTDDI_VERSION=0x05010200
+3> /c
+3> /Zc:wchar_t-
+3> /Zl
+3> /Zp8
+3> /Gy
+3> /Gm-
+3> -cbstring
+3> /W4
+3> /WX
+3> /Gz
+3> /hotpatch
+3> /EHs-c-
+3> /GR-
+3> /GF
+3> /GS
+3> /Zi
+3> /Oxs
+3> /Oy-
+3> /Zi
+3> /Fdc:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386\
+3> /DKMDF_MAJOR_VERSION_STRING=01
+3> /DKMDF_MINOR_VERSION_STRING=009
+3> /wd4603
+3> /wd4627
+3> /typedil-
+3> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
+3> .\xenvbd.c 
+3>xenvbd.c
+1>abstraction_cas.c
+4>xennet_tx.c
+1>abstraction_dcas.c
+2>xenpci_fdo.c
+1>abstraction_increment.c
+4>xennet_rx.c
+1>freelist_delete.c
+1>freelist_get_and_set.c
+2>xenpci_pdo.c
+4>xennet_oid.c
+1>freelist_new.c
+1>freelist_pop_push.c
+4>xennet_common.c
+1>freelist_query.c
+2>evtchn.c
+1>queue_delete.c
+1>queue_new.c
+4>Generating Code...
+2>gnttbl.c
+1>queue_query.c
+1>queue_queue.c
+3>Compiling (NoSync) c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi *************
+3>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+3>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi
+1>ringbuffer_delete.c
+2>xenbus.c
+3>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+4>Compiling (NoSync) c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb *************
+4>'nmake.exe /nologo BUILDMSG=Stop. -i /nologo /f d:\winddk\7600.16385.1\bin\makefile.def BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+4>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb
+1>ringbuffer_get_and_put.c
+4>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+3> rc.exe -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""xenscsi.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386\xenscsi.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /DNDEBUG /D_DLL=1 /DNDEBUG  -DBUILD_NUMBER=84 -DWIN_KERNEL_BUILD /DNTDDI_VERSION=0x05010200   /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\crt .\xenscsi.rc
+3>Microsoft (R) Windows (R) Resource Compiler Version 6.1.6908.0
+3>Copyright (C) Microsoft Corporation.  All rights reserved.
+3> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386\cl.rsp
+1>ringbuffer_new.c
+2>memory.c
+1>ringbuffer_query.c
+3>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
+3>Copyright (C) Microsoft Corporation.  All rights reserved.
+3>cl /Fo"c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386/"
+3> /FC
+3> /Ii386
+3> /I.
+3> /I..\common\include
+3> /I..\common\include\public
+3> /I..\liblfds.6\inc
+3> /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386
+3> /ID:\WinDDK\7600.16385.1\inc\api
+3> /ID:\WinDDK\7600.16385.1\inc\api
+3> /ID:\WinDDK\7600.16385.1\inc\ddk
+3> /ID:\WinDDK\7600.16385.1\inc\ddk
+3> /ID:\WinDDK\7600.16385.1\inc\crt
+3> /D_X86_=1
+3> /Di386=1
+3> /DSTD_CALL
+3> /DCONDITION_HANDLING=1
+3> /DNT_UP=1
+3> /DNT_INST=0
+3> /DWIN32=100
+3> /D_NT1X_=100
+3> /DWINNT=1
+3> /D_WIN32_WINNT=0x0501
+3> /DWINVER=0x0501
+3> /D_WIN32_IE=0x0603
+3> /DWIN32_LEAN_AND_MEAN=1
+3> /DDEVL=1
+3> /D__BUILDMACHINE__=WinDDK
+3> /DFPO=0
+3> /DNDEBUG
+3> /D_DLL=1
+3> /DNDEBUG
+3> -DBUILD_NUMBER=84
 3> -DWIN_KERNEL_BUILD
 3> /DNTDDI_VERSION=0x05010200
 3> /c
@@ -373,7 +390,7 @@ oacr invalidate root:x86fre /autocleanqueue
 3> /Oxs
 3> /Oy-
 3> /Zi
-3> /Fdc:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386\
+3> /Fdc:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386\
 3> /DKMDF_MAJOR_VERSION_STRING=01
 3> /DKMDF_MINOR_VERSION_STRING=009
 3> /wd4603
@@ -382,47 +399,106 @@ oacr invalidate root:x86fre /autocleanqueue
 3> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
 3> .\xenscsi.c 
 3>xenscsi.c
-4>xennet_common.c
-2>gnttbl.c
-1>queue_delete.c
-1>queue_new.c
-1>queue_query.c
-4>Generating Code...
-2>xenbus.c
-1>queue_queue.c
-3>Compiling (NoSync) c:\users\administrator\desktop\win-pvdrivers\xenusb *************
-3>'nmake.exe /nologo BUILDMSG=Stop. -i /nologo /f d:\winddk\7600.16385.1\bin\makefile.def BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-3>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenusb
+4> rc.exe -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""xenusb.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /DNDEBUG /D_DLL=1 /DNDEBUG  -DBUILD_NUMBER=84 -DWIN_KERNEL_BUILD /DNTDDI_VERSION=0x05010200   /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9 /ID:\WinDDK\7600.16385.1\inc\crt .\xenusb.rc
+4>Microsoft (R) Windows (R) Resource Compiler Version 6.1.6908.0
+4>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>slist_delete.c
+4> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\cl.rsp
+2>xenpci_device_interface.c
+4>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
+4>Copyright (C) Microsoft Corporation.  All rights reserved.
+4>cl /Fo"c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386/"
+4> /FC
+4> /Ii386
+4> /I.
+4> /I..\common\include
+4> /I..\common\include\public
+4> /I..\liblfds.6\inc
+4> /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386
+4> /ID:\WinDDK\7600.16385.1\inc\api
+4> /ID:\WinDDK\7600.16385.1\inc\api
+4> /ID:\WinDDK\7600.16385.1\inc\ddk
+4> /ID:\WinDDK\7600.16385.1\inc\ddk
+4> /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9
+4> /ID:\WinDDK\7600.16385.1\inc\crt
+4> /D_X86_=1
+4> /Di386=1
+4> /DSTD_CALL
+4> /DCONDITION_HANDLING=1
+4> /DNT_UP=1
+4> /DNT_INST=0
+4> /DWIN32=100
+4> /D_NT1X_=100
+4> /DWINNT=1
+4> /D_WIN32_WINNT=0x0501
+4> /DWINVER=0x0501
+4> /D_WIN32_IE=0x0603
+4> /DWIN32_LEAN_AND_MEAN=1
+4> /DDEVL=1
+4> /D__BUILDMACHINE__=WinDDK
+4> /DFPO=0
+4> /DNDEBUG
+4> /D_DLL=1
+4> /DNDEBUG
+4> -DBUILD_NUMBER=84
+4> -DWIN_KERNEL_BUILD
+4> /DNTDDI_VERSION=0x05010200
+4> /c
+4> /Zc:wchar_t-
+4> /Zl
+4> /Zp8
+4> /Gy
+4> /Gm-
+4> -cbstring
+4> /W4
+4> /WX
+4> /Gz
+4> /hotpatch
+4> /EHs-c-
+4> /GR-
+4> /GF
+4> /GS
+4> /Zi
+4> /Oxs
+4> /Oy-
+4> /Zi
+4> /Fdc:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\
+4> /DKMDF_MAJOR_VERSION=1
+4> /DKMDF_MINOR_VERSION=9
+4> /DKMDF_MAJOR_VERSION_STRING=01
+4> /DKMDF_MINOR_VERSION_STRING=009
+4> /wd4603
+4> /wd4627
+4> /typedil-
+4> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
+4> .\xenusb.c .\xenusb_fdo.c .\xenusb_hub.c .\xenusb_huburb.c .\xenusb_devurb.c .\xenusb_decode.c 
+4>xenusb.c
+1>slist_get_and_set.c
+1>Generating Code...
+2>xenbus_device_interface.c
+3>Compiling (NoSync) c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig *************
+3>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+3>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig
+4>xenusb_fdo.c
 3>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-1>ringbuffer_delete.c
-2>memory.c
-1>ringbuffer_get_and_put.c
-3> rc.exe -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""xenusb.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /DNDEBUG /D_DLL=1 /DNDEBUG  -DBUILD_NUMBER=9 -DWIN_KERNEL_BUILD /DNTDDI_VERSION=0x05010200   /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9 /ID:\WinDDK\7600.16385.1\inc\crt .\xenusb.rc
-1>ringbuffer_new.c
-4>Compiling (NoSync) c:\users\administrator\desktop\win-pvdrivers\copyconfig *************
-4>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-4>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\copyconfig
-3>Microsoft (R) Windows (R) Resource Compiler Version 6.1.6908.0
-3>Copyright (C) Microsoft Corporation.  All rights reserved.
-3> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\cl.rsp
-4>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-1>ringbuffer_query.c
+1>Compiling...
+1>slist_link.c
+2>xenpci_highsync.c
+3> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig\objfre_wxp_x86\i386\cl.rsp
+1>slist_new.c
 3>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
 3>Copyright (C) Microsoft Corporation.  All rights reserved.
-2>xenpci_device_interface.c
-3>cl /Fo"c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386/"
+1>stack_delete.c
+3>cl /Fo"c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig\objfre_wxp_x86\i386/"
 3> /FC
 3> /Ii386
 3> /I.
 3> /I..\common\include
 3> /I..\common\include\public
 3> /I..\liblfds.6\inc
-3> /Ic:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386
+3> /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig\objfre_wxp_x86\i386
 3> /ID:\WinDDK\7600.16385.1\inc\api
 3> /ID:\WinDDK\7600.16385.1\inc\api
-3> /ID:\WinDDK\7600.16385.1\inc\ddk
-3> /ID:\WinDDK\7600.16385.1\inc\ddk
-3> /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9
 3> /ID:\WinDDK\7600.16385.1\inc\crt
 3> /D_X86_=1
 3> /Di386=1
@@ -442,17 +518,17 @@ oacr invalidate root:x86fre /autocleanqueue
 3> /DFPO=0
 3> /DNDEBUG
 3> /D_DLL=1
-3> /DNDEBUG
-3> -DBUILD_NUMBER=9
+3> /D_MT=1
+3> -DBUILD_NUMBER=84
 3> -DWIN_KERNEL_BUILD
 3> /DNTDDI_VERSION=0x05010200
+3> /DPSAPI_VERSION=1
 3> /c
 3> /Zc:wchar_t-
 3> /Zl
 3> /Zp8
 3> /Gy
 3> /Gm-
-3> -cbstring
 3> /W4
 3> /WX
 3> /Gz
@@ -465,273 +541,197 @@ oacr invalidate root:x86fre /autocleanqueue
 3> /Oxs
 3> /Oy-
 3> /Zi
-3> /Fdc:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\
-3> /DKMDF_MAJOR_VERSION=1
-3> /DKMDF_MINOR_VERSION=9
+3> /Fdc:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig\objfre_wxp_x86\i386\
 3> /DKMDF_MAJOR_VERSION_STRING=01
 3> /DKMDF_MINOR_VERSION_STRING=009
 3> /wd4603
 3> /wd4627
 3> /typedil-
 3> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
-3> .\xenusb.c .\xenusb_fdo.c .\xenusb_hub.c .\xenusb_huburb.c .\xenusb_devurb.c .\xenusb_decode.c 
-3>xenusb.c
-1>slist_delete.c
-4> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\win-pvdrivers\copyconfig\objfre_wxp_x86\i386\cl.rsp
-4>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
-4>Copyright (C) Microsoft Corporation.  All rights reserved.
-1>slist_get_and_set.c
-4>cl /Fo"c:\users\administrator\desktop\win-pvdrivers\copyconfig\objfre_wxp_x86\i386/"
-4> /FC
-4> /Ii386
-4> /I.
-4> /I..\common\include
-4> /I..\common\include\public
-4> /I..\liblfds.6\inc
-4> /Ic:\users\administrator\desktop\win-pvdrivers\copyconfig\objfre_wxp_x86\i386
-4> /ID:\WinDDK\7600.16385.1\inc\api
-4> /ID:\WinDDK\7600.16385.1\inc\api
-4> /ID:\WinDDK\7600.16385.1\inc\crt
-4> /D_X86_=1
-4> /Di386=1
-4> /DSTD_CALL
-4> /DCONDITION_HANDLING=1
-4> /DNT_UP=1
-4> /DNT_INST=0
-4> /DWIN32=100
-4> /D_NT1X_=100
-4> /DWINNT=1
-4> /D_WIN32_WINNT=0x0501
-4> /DWINVER=0x0501
-4> /D_WIN32_IE=0x0603
-4> /DWIN32_LEAN_AND_MEAN=1
-4> /DDEVL=1
-4> /D__BUILDMACHINE__=WinDDK
-4> /DFPO=0
-4> /DNDEBUG
-4> /D_DLL=1
-4> /D_MT=1
-4> -DBUILD_NUMBER=9
-4> -DWIN_KERNEL_BUILD
-4> /DNTDDI_VERSION=0x05010200
-4> /DPSAPI_VERSION=1
-4> /c
-4> /Zc:wchar_t-
-4> /Zl
-4> /Zp8
-4> /Gy
-4> /Gm-
-4> /W4
-4> /WX
-4> /Gz
-4> /hotpatch
-4> /EHs-c-
-4> /GR-
-4> /GF
-4> /GS
-4> /Zi
-4> /Oxs
-4> /Oy-
-4> /Zi
-4> /Fdc:\users\administrator\desktop\win-pvdrivers\copyconfig\objfre_wxp_x86\i386\
-4> /DKMDF_MAJOR_VERSION_STRING=01
-4> /DKMDF_MINOR_VERSION_STRING=009
-4> /wd4603
-4> /wd4627
-4> /typedil-
-4> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
-4> .\copyconfig.c 
-4>copyconfig.c
-2>xenbus_device_interface.c
-1>Generating Code...
-3>xenusb_fdo.c
-1>Compiling...
-1>slist_link.c
-2>xenpci_highsync.c
-4>Compiling (NoSync) c:\users\administrator\desktop\win-pvdrivers\shutdownmon *************
-4>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-4>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\shutdownmon
-4>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-1>slist_new.c
-3>xenusb_hub.c
-1>stack_delete.c
-2>xenpci_patch_kernel.c
-4> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\win-pvdrivers\shutdownmon\objfre_wxp_x86\i386\cl.rsp
-4>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
-4>Copyright (C) Microsoft Corporation.  All rights reserved.
+3> .\copyconfig.c 
+3>copyconfig.c
 1>stack_new.c
-4>cl /Fo"c:\users\administrator\desktop\win-pvdrivers\shutdownmon\objfre_wxp_x86\i386/"
-4> /FC
-4> /Ii386
-4> /I.
-4> /I..\common\include
-4> /I..\common\include\public
-4> /I..\liblfds.6\inc
-4> /Ic:\users\administrator\desktop\win-pvdrivers\shutdownmon\objfre_wxp_x86\i386
-4> /ID:\WinDDK\7600.16385.1\inc\api
-4> /ID:\WinDDK\7600.16385.1\inc\api
-4> /ID:\WinDDK\7600.16385.1\inc\crt
-4> /D_X86_=1
-4> /Di386=1
-4> /DSTD_CALL
-4> /DCONDITION_HANDLING=1
-4> /DNT_UP=1
-4> /DNT_INST=0
-4> /DWIN32=100
-4> /D_NT1X_=100
-4> /DWINNT=1
-4> /D_WIN32_WINNT=0x0501
-4> /DWINVER=0x0501
-4> /D_WIN32_IE=0x0603
-4> /DWIN32_LEAN_AND_MEAN=1
-4> /DDEVL=1
-4> /D__BUILDMACHINE__=WinDDK
-4> /DFPO=0
-4> /DNDEBUG
-4> /D_DLL=1
-4> /D_MT=1
-4> -DBUILD_NUMBER=9
-4> -DWIN_KERNEL_BUILD
-4> /DNTDDI_VERSION=0x05010200
-4> /DPSAPI_VERSION=1
-4> /c
-4> /Zc:wchar_t-
-4> /Zl
-4> /Zp8
-4> /Gy
-4> /Gm-
-4> /W4
-4> /WX
-4> /Gz
-4> /hotpatch
-4> /EHs-c-
-4> /GR-
-4> /GF
-4> /GS
-4> /Zi
-4> /Oxs
-4> /Oy-
-4> /Zi
-4> /Fdc:\users\administrator\desktop\win-pvdrivers\shutdownmon\objfre_wxp_x86\i386\
-4> /DKMDF_MAJOR_VERSION_STRING=01
-4> /DKMDF_MINOR_VERSION_STRING=009
-4> /wd4603
-4> /wd4627
-4> /typedil-
-4> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
-4> .\shutdownmon.c 
-4>shutdownmon.c
+2>xenpci_patch_kernel.c
+4>xenusb_hub.c
 1>stack_push_pop.c
-3>xenusb_huburb.c
+3>Compiling (NoSync) c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon *************
+3>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+3>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon
 1>stack_query.c
-2>xenpci_dbgprint.c
+3>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
 1>Generating Code...
-4>Compiling (NoSync) c:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents *************
-4>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-4>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents
-1> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /lib /out:../../bin/\i386\liblfds.lib /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221  /WX /nodefaultlib /machine:ix86 @c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\lib.rsp
+2>xenpci_dbgprint.c
+4>xenusb_huburb.c
+3> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon\objfre_wxp_x86\i386\cl.rsp
+1> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /lib /out:../../bin/\i386\liblfds.lib /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221  /WX /nodefaultlib /machine:ix86 @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\lib.rsp
 1>Microsoft (R) Library Manager Version 9.00.30729.207
 1>Copyright (C) Microsoft Corporation.  All rights reserved.
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\abstraction_aligned_free.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\abstraction_aligned_malloc.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\abstraction_cas.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\abstraction_dcas.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\abstraction_increment.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\freelist_delete.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\freelist_get_and_set.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\freelist_new.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\freelist_pop_push.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\freelist_query.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\queue_delete.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\queue_new.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\queue_query.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\queue_queue.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\ringbuffer_delete.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\ringbuffer_get_and_put.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\ringbuffer_new.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\ringbuffer_query.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\slist_delete.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\slist_get_and_set.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\slist_link.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\slist_new.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\stack_delete.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\stack_new.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\stack_push_pop.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\stack_query.obj 
-4>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-3>xenusb_devurb.c
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\abstraction_aligned_free.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\abstraction_aligned_malloc.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\abstraction_cas.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\abstraction_dcas.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\abstraction_increment.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\freelist_delete.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\freelist_get_and_set.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\freelist_new.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\freelist_pop_push.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\freelist_query.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\queue_delete.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\queue_new.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\queue_query.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\queue_queue.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\ringbuffer_delete.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\ringbuffer_get_and_put.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\ringbuffer_new.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\ringbuffer_query.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\slist_delete.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\slist_get_and_set.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\slist_link.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\slist_new.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\stack_delete.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\stack_new.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\stack_push_pop.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\liblfds.6\src\single_dir_for_windows_kernel\objfre_wxp_x86\i386\stack_query.obj 
+3>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
+3>Copyright (C) Microsoft Corporation.  All rights reserved.
+3>cl /Fo"c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon\objfre_wxp_x86\i386/"
+3> /FC
+3> /Ii386
+3> /I.
+3> /I..\common\include
+3> /I..\common\include\public
+3> /I..\liblfds.6\inc
+3> /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon\objfre_wxp_x86\i386
+3> /ID:\WinDDK\7600.16385.1\inc\api
+3> /ID:\WinDDK\7600.16385.1\inc\api
+3> /ID:\WinDDK\7600.16385.1\inc\crt
+3> /D_X86_=1
+3> /Di386=1
+3> /DSTD_CALL
+3> /DCONDITION_HANDLING=1
+3> /DNT_UP=1
+3> /DNT_INST=0
+3> /DWIN32=100
+3> /D_NT1X_=100
+3> /DWINNT=1
+3> /D_WIN32_WINNT=0x0501
+3> /DWINVER=0x0501
+3> /D_WIN32_IE=0x0603
+3> /DWIN32_LEAN_AND_MEAN=1
+3> /DDEVL=1
+3> /D__BUILDMACHINE__=WinDDK
+3> /DFPO=0
+3> /DNDEBUG
+3> /D_DLL=1
+3> /D_MT=1
+3> -DBUILD_NUMBER=84
+3> -DWIN_KERNEL_BUILD
+3> /DNTDDI_VERSION=0x05010200
+3> /DPSAPI_VERSION=1
+3> /c
+3> /Zc:wchar_t-
+3> /Zl
+3> /Zp8
+3> /Gy
+3> /Gm-
+3> /W4
+3> /WX
+3> /Gz
+3> /hotpatch
+3> /EHs-c-
+3> /GR-
+3> /GF
+3> /GS
+3> /Zi
+3> /Oxs
+3> /Oy-
+3> /Zi
+3> /Fdc:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon\objfre_wxp_x86\i386\
+3> /DKMDF_MAJOR_VERSION_STRING=01
+3> /DKMDF_MINOR_VERSION_STRING=009
+3> /wd4603
+3> /wd4627
+3> /typedil-
+3> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
+3> .\shutdownmon.c 
+3>shutdownmon.c
+1>Compiling (NoSync) c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents *************
+1>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 PASS1_NOLIB=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+1>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents
 2>Generating Code...
-4> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents\objfre_wxp_x86\i386\cl.rsp
-4>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
-4>Copyright (C) Microsoft Corporation.  All rights reserved.
-4>cl /Fo"c:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents\objfre_wxp_x86\i386/"
-4> /FC
-4> /Ii386
-4> /I.
-4> /I..\common\include
-4> /I..\common\include\public
-4> /I..\liblfds.6\inc
-4> /Ic:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents\objfre_wxp_x86\i386
-4> /ID:\WinDDK\7600.16385.1\inc\api
-4> /ID:\WinDDK\7600.16385.1\inc\api
-4> /ID:\WinDDK\7600.16385.1\inc\crt
-4> /D_X86_=1
-4> /Di386=1
-4> /DSTD_CALL
-4> /DCONDITION_HANDLING=1
-4> /DNT_UP=1
-4> /DNT_INST=0
-4> /DWIN32=100
-4> /D_NT1X_=100
-4> /DWINNT=1
-4> /D_WIN32_WINNT=0x0501
-4> /DWINVER=0x0501
-4> /D_WIN32_IE=0x0603
-4> /DWIN32_LEAN_AND_MEAN=1
-4> /DDEVL=1
-4> /D__BUILDMACHINE__=WinDDK
-4> /DFPO=0
-4> /DNDEBUG
-4> /D_DLL=1
-4> /D_MT=1
-4> -DBUILD_NUMBER=9
-4> -DWIN_KERNEL_BUILD
-4> /DNTDDI_VERSION=0x05010200
-4> /DPSAPI_VERSION=1
-4> /c
-4> /Zc:wchar_t-
-4> /Zl
-4> /Zp8
-4> /Gy
-4> /Gm-
-4> /W4
-4> /WX
-4> /Gz
-4> /hotpatch
-4> /EHs-c-
-4> /GR-
-4> /GF
-4> /GS
-4> /Zi
-4> /Oxs
-4> /Oy-
-4> /Zi
-4> /Fdc:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents\objfre_wxp_x86\i386\
-4> /DKMDF_MAJOR_VERSION_STRING=01
-4> /DKMDF_MINOR_VERSION_STRING=009
-4> /wd4603
-4> /wd4627
-4> /typedil-
-4> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
-4> .\waitnopendinginstallevents.c 
-4>waitnopendinginstallevents.c
-3>xenusb_decode.c
-3>Generating Code...
-100>Compiling c:\users\administrator\desktop\win-pvdrivers\xenpci *************
+1>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+4>xenusb_devurb.c
+1> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrcl @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents\objfre_wxp_x86\i386\cl.rsp
+1>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>cl /Fo"c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents\objfre_wxp_x86\i386/"
+1> /FC
+1> /Ii386
+1> /I.
+1> /I..\common\include
+1> /I..\common\include\public
+1> /I..\liblfds.6\inc
+1> /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents\objfre_wxp_x86\i386
+1> /ID:\WinDDK\7600.16385.1\inc\api
+1> /ID:\WinDDK\7600.16385.1\inc\api
+1> /ID:\WinDDK\7600.16385.1\inc\crt
+1> /D_X86_=1
+1> /Di386=1
+1> /DSTD_CALL
+1> /DCONDITION_HANDLING=1
+1> /DNT_UP=1
+1> /DNT_INST=0
+1> /DWIN32=100
+1> /D_NT1X_=100
+1> /DWINNT=1
+1> /D_WIN32_WINNT=0x0501
+1> /DWINVER=0x0501
+1> /D_WIN32_IE=0x0603
+1> /DWIN32_LEAN_AND_MEAN=1
+1> /DDEVL=1
+1> /D__BUILDMACHINE__=WinDDK
+1> /DFPO=0
+1> /DNDEBUG
+1> /D_DLL=1
+1> /D_MT=1
+1> -DBUILD_NUMBER=84
+1> -DWIN_KERNEL_BUILD
+1> /DNTDDI_VERSION=0x05010200
+1> /DPSAPI_VERSION=1
+1> /c
+1> /Zc:wchar_t-
+1> /Zl
+1> /Zp8
+1> /Gy
+1> /Gm-
+1> /W4
+1> /WX
+1> /Gz
+1> /hotpatch
+1> /EHs-c-
+1> /GR-
+1> /GF
+1> /GS
+1> /Zi
+1> /Oxs
+1> /Oy-
+1> /Zi
+1> /Fdc:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents\objfre_wxp_x86\i386\
+1> /DKMDF_MAJOR_VERSION_STRING=01
+1> /DKMDF_MINOR_VERSION_STRING=009
+1> /wd4603
+1> /wd4627
+1> /typedil-
+1> /FID:\WinDDK\7600.16385.1\inc\api\warning.h
+1> .\waitnopendinginstallevents.c 
+1>waitnopendinginstallevents.c
+4>xenusb_decode.c
+100>Compiling c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci *************
 100>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-100>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenpci
+100>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci
+4>Generating Code...
 100>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-100> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /lib /out:c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.lib @c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\lib.rsp
+100> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /lib /out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.lib @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\lib.rsp
 100>Microsoft (R) Library Manager Version 9.00.30729.207
 100>Copyright (C) Microsoft Corporation.  All rights reserved.
 100>/IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 
@@ -739,72 +739,71 @@ oacr invalidate root:x86fre /autocleanqueue
 100>/nodefaultlib 
 100>/machine:ix86 
 100>/def:xenpci.def 
-100>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\tpr_emulate.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\dbgprint_hook.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_fdo.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_pdo.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\evtchn.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\gnttbl.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenbus.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\memory.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_device_interface.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenbus_device_interface.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_highsync.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_patch_kernel.obj c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_dbgprint.obj 
-100> Creating library c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.lib and object c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.exp
-100> copy xenpci.inx c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.inf
-100>100> stampinf -f c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.inf -a x86 -d * -k 1.9 -v 0.11.0.9
-100>Stamping c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.inf [Version] section with DriverVer=03/25/2012,0.11.0.9
-Number of dirs done building libs 2 out of 9
-101>Compiling c:\users\administrator\desktop\win-pvdrivers\xenvbd *************
+100>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\tpr_emulate.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\dbgprint_hook.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_fdo.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_pdo.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\evtchn.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\gnttbl.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenbus.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\memory.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_device_interface.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenbus_device_interface.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_highsync.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_patch_kernel.obj c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_dbgprint.obj 
+100> Creating library c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.lib and object c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.exp
+100> copy xenpci.inx c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.inf
+100>100> stampinf -f c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.inf -a x86 -d * -k 1.9 -v 0.11.0.84
+100>Stamping c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.inf [Version] section with DriverVer=04/08/2012,0.11.0.84
+100>Compiling c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd *************
+100>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+100>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd
+100>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+100> copy xenvbd.inx c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386\xenvbd.inf
+100>100> stampinf -f c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386\xenvbd.inf -a x86 -d * -v 0.11.0.84
+100>Stamping c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386\xenvbd.inf [Version] section with DriverVer=04/08/2012,0.11.0.84
+Number of dirs done building libs 3 out of 9
+101>Compiling c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet *************
 101>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-101>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenvbd
-102>Compiling c:\users\administrator\desktop\win-pvdrivers\xennet *************
+101>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet
+102>Compiling c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi *************
 102>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-102>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xennet
-103>Compiling c:\users\administrator\desktop\win-pvdrivers\xenscsi *************
-103>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-103>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenscsi
-104>Compiling c:\users\administrator\desktop\win-pvdrivers\xenusb *************
-104>'nmake.exe /nologo BUILDMSG=Stop. -i /nologo /f d:\winddk\7600.16385.1\bin\makefile.def BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-104>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenusb
+102>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi
+103>Compiling c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb *************
+103>'nmake.exe /nologo BUILDMSG=Stop. -i /nologo /f d:\winddk\7600.16385.1\bin\makefile.def BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+103>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb
+104>Compiling c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig *************
+104>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+104>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig
 101>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
 104>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
 102>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
 103>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-101> copy xenvbd.inx c:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386\xenvbd.inf
-101>101> stampinf -f c:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386\xenvbd.inf -a x86 -d * -v 0.11.0.9
-101>Stamping c:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386\xenvbd.inf [Version] section with DriverVer=03/25/2012,0.11.0.9
-101>Compiling c:\users\administrator\desktop\win-pvdrivers\copyconfig *************
-101>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-101>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\copyconfig
-104> copy xenusb.inx c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb.inf
-101>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-102> copy xennet.inx c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet.inf
-104>104> stampinf -f c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb.inf -a x86 -d * -k 1.9 -v 0.11.0.9
-104>Stamping c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb.inf [Version] section with DriverVer=03/25/2012,0.11.0.9
-102>102> stampinf -f c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet.inf -a x86 -d * -v 0.11.0.9
-104>Compiling c:\users\administrator\desktop\win-pvdrivers\shutdownmon *************
+102> copy xenscsi.inx c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386\xenscsi.inf
+101> copy xennet.inx c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet.inf
+104>Compiling c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon *************
 104>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-104>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\shutdownmon
-102>Stamping c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet.inf [Version] section with DriverVer=03/25/2012,0.11.0.9
-102>Compiling c:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents *************
+104>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon
+103> copy xenusb.inx c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb.inf
+102>102> stampinf -f c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386\xenscsi.inf -a x86 -d * -v 0.11.0.84
+101>101> stampinf -f c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet.inf -a x86 -d * -v 0.11.0.84
+102>Stamping c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386\xenscsi.inf [Version] section with DriverVer=04/08/2012,0.11.0.84
+103>101>Stamping c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet.inf [Version] section with DriverVer=04/08/2012,0.11.0.84
+103> stampinf -f c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb.inf -a x86 -d * -k 1.9 -v 0.11.0.84
+102>Compiling c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents *************
 102>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-102>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents
-103> copy xenscsi.inx c:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386\xenscsi.inf
-103>103> stampinf -f c:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386\xenscsi.inf -a x86 -d * -v 0.11.0.9
-103>Stamping c:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386\xenscsi.inf [Version] section with DriverVer=03/25/2012,0.11.0.9
+102>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents
+103>Stamping c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb.inf [Version] section with DriverVer=04/08/2012,0.11.0.84
 104>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
 102>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-1>Linking for c:\users\administrator\desktop\win-pvdrivers\xenpci *************
+1>Linking for c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci *************
 1>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDLL=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-1>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenpci
-2>Linking for c:\users\administrator\desktop\win-pvdrivers\xenvbd *************
+1>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci
+2>Linking for c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd *************
 2>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-2>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenvbd
-3>Linking for c:\users\administrator\desktop\win-pvdrivers\xennet *************
+2>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd
+3>Linking for c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet *************
 3>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-3>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xennet
-4>Linking for c:\users\administrator\desktop\win-pvdrivers\xenscsi *************
+3>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet
+4>Linking for c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi *************
 4>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-4>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenscsi
-3>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+4>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi
 1>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
 2>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+3>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
 4>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-2> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386\xenvbd.sys /machine:ix86 @c:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386\lnk.rsp
-3> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet.sys /machine:ix86 @c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\lnk.rsp
-4> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386\xenscsi.sys /machine:ix86 @c:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386\lnk.rsp
-1> rc.exe -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""xenpci.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /DNDEBUG /D_DLL=1 /DNDEBUG  -DBUILD_NUMBER=9 -DWIN_KERNEL_BUILD /DNTDDI_VERSION=0x05010200   /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9 /ID:\WinDDK\7600.16385.1\inc\crt .\xenpci.rc
+2> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386\xenvbd.sys /machine:ix86 @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386\lnk.rsp
+3> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet.sys /machine:ix86 @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\lnk.rsp
+4> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386\xenscsi.sys /machine:ix86 @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386\lnk.rsp
 2>Microsoft (R) Incremental Linker Version 9.00.30729.207
 2>Copyright (C) Microsoft Corporation.  All rights reserved.
 2>/MERGE:_PAGE=PAGE 
@@ -830,9 +829,9 @@ Number of dirs done building libs 2 out of 9
 2>/align:0x80 /stub:d:\winddk\7600.16385.1\lib\wxp\stub512.com 
 2>/subsystem:native,5.01 
 2>/entry:GsDriverEntry@8 
-2>/out:c:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386\xenvbd.sys 
-2>c:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386\xenvbd.res 
-2>c:\users\administrator\desktop\win-pvdrivers\xenvbd\objfre_wxp_x86\i386\xenvbd.obj 
+2>/out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386\xenvbd.sys 
+2>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386\xenvbd.res 
+2>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenvbd\objfre_wxp_x86\i386\xenvbd.obj 
 2>d:\winddk\7600.16385.1\lib\wxp\i386\BufferOverflowK.lib 
 2>d:\winddk\7600.16385.1\lib\wxp\i386\ntoskrnl.lib 
 2>d:\winddk\7600.16385.1\lib\wxp\i386\hal.lib 
@@ -840,6 +839,7 @@ Number of dirs done building libs 2 out of 9
 2>d:\winddk\7600.16385.1\lib\wxp\i386\ntstrsafe.lib 
 2>d:\winddk\7600.16385.1\lib\wxp\i386\scsiport.lib 
 2>d:\winddk\7600.16385.1\lib\wxp\i386\sehupd.lib 
+1> rc.exe -l 409 -DSXS_PROCESSOR_ARCHITECTURE="""x86"""  -DSXS_TARGET="""xenpci.sys"""   -DSYSTEM_COMPATIBLE_ASSEMBLY_NAME="""Microsoft.Windows.SystemCompatible"""  -DLSYSTEM_COMPATIBLE_ASSEMBLY_NAME=L"""Microsoft.Windows.SystemCompatible"""   -DSXS_ASSEMBLY_VERSION=""""""  /r /fo c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.res /D_X86_=1 /Di386=1  /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1  /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603    /DWIN32_LEAN_AND_MEAN=1  /DDEVL=1 /D__BUILDMACHINE__=WinDDK /DFPO=0  /DNDEBUG /D_DLL=1 /DNDEBUG  -DBUILD_NUMBER=84 -DWIN_KERNEL_BUILD /DNTDDI_VERSION=0x05010200   /I..\common\include /I..\common\include\public /I..\liblfds.6\inc /Ic:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386 /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\api /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\ddk /ID:\WinDDK\7600.16385.1\inc\wdf\kmdf\1.9 /ID:\WinDDK\7600.16385.1\inc\crt .\xenpci.rc
 3>Microsoft (R) Incremental Linker Version 9.00.30729.207
 3>Copyright (C) Microsoft Corporation.  All rights reserved.
 3>/MERGE:_PAGE=PAGE 
@@ -865,13 +865,13 @@ Number of dirs done building libs 2 out of 9
 3>/align:0x80 /stub:d:\winddk\7600.16385.1\lib\wxp\stub512.com 
 3>/subsystem:native,5.01 
 3>/entry:GsDriverEntry@8 
-3>/out:c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet.sys 
-3>c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet.res 
-3>c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet.obj 
-3>c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet_tx.obj 
-3>c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet_rx.obj 
-3>c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet_oid.obj 
-3>c:\users\administrator\desktop\win-pvdrivers\xennet\objfre_wxp_x86\i386\xennet_common.obj 
+3>/out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet.sys 
+3>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet.res 
+3>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet.obj 
+3>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet_tx.obj 
+3>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet_rx.obj 
+3>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet_oid.obj 
+3>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xennet\objfre_wxp_x86\i386\xennet_common.obj 
 3>d:\winddk\7600.16385.1\lib\wxp\i386\BufferOverflowK.lib 
 3>d:\winddk\7600.16385.1\lib\wxp\i386\ntoskrnl.lib 
 3>d:\winddk\7600.16385.1\lib\wxp\i386\hal.lib 
@@ -906,9 +906,9 @@ Number of dirs done building libs 2 out of 9
 4>/align:0x80 /stub:d:\winddk\7600.16385.1\lib\wxp\stub512.com 
 4>/subsystem:native,5.01 
 4>/entry:GsDriverEntry@8 
-4>/out:c:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386\xenscsi.sys 
-4>c:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386\xenscsi.res 
-4>c:\users\administrator\desktop\win-pvdrivers\xenscsi\objfre_wxp_x86\i386\xenscsi.obj 
+4>/out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386\xenscsi.sys 
+4>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386\xenscsi.res 
+4>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenscsi\objfre_wxp_x86\i386\xenscsi.obj 
 4>d:\winddk\7600.16385.1\lib\wxp\i386\BufferOverflowK.lib 
 4>d:\winddk\7600.16385.1\lib\wxp\i386\ntoskrnl.lib 
 4>d:\winddk\7600.16385.1\lib\wxp\i386\hal.lib 
@@ -918,13 +918,10 @@ Number of dirs done building libs 2 out of 9
 4>d:\winddk\7600.16385.1\lib\wxp\i386\sehupd.lib 
 1>Microsoft (R) Windows (R) Resource Compiler Version 6.1.6908.0
 1>Copyright (C) Microsoft Corporation.  All rights reserved.
-1> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.sys /machine:ix86 @c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\lnk.rsp
-4>Linking for c:\users\administrator\desktop\win-pvdrivers\xenusb *************
-4>'nmake.exe /nologo BUILDMSG=Stop. -i /nologo /f d:\winddk\7600.16385.1\bin\makefile.def BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-4>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\xenusb
-2>Linking for c:\users\administrator\desktop\win-pvdrivers\copyconfig *************
-2>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-2>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\copyconfig
+1> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.sys /machine:ix86 @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\lnk.rsp
+2>Linking for c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb *************
+2>'nmake.exe /nologo BUILDMSG=Stop. -i /nologo /f d:\winddk\7600.16385.1\bin\makefile.def BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+2>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb
 1>Microsoft (R) Incremental Linker Version 9.00.30729.207
 1>Copyright (C) Microsoft Corporation.  All rights reserved.
 1>/MERGE:_PAGE=PAGE 
@@ -950,23 +947,23 @@ Number of dirs done building libs 2 out of 9
 1>/subsystem:native,5.01 
 1>/base:0x10000 
 1>/entry:FxDriverEntry@8 
-1>/out:c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.sys 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.exp 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.res 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\tpr_emulate.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\dbgprint_hook.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_fdo.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_pdo.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\evtchn.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\gnttbl.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenbus.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\memory.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_device_interface.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenbus_device_interface.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_highsync.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_patch_kernel.obj 
-1>c:\users\administrator\desktop\win-pvdrivers\xenpci\objfre_wxp_x86\i386\xenpci_dbgprint.obj 
+1>/out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.sys 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.exp 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.res 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\tpr_emulate.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\dbgprint_hook.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_fdo.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_pdo.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\evtchn.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\gnttbl.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenbus.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\memory.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_device_interface.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenbus_device_interface.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_highsync.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_patch_kernel.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenpci\objfre_wxp_x86\i386\xenpci_dbgprint.obj 
 1>d:\winddk\7600.16385.1\lib\wxp\i386\BufferOverflowK.lib 
 1>d:\winddk\7600.16385.1\lib\wxp\i386\ntoskrnl.lib 
 1>d:\winddk\7600.16385.1\lib\wxp\i386\hal.lib 
@@ -979,17 +976,21 @@ Number of dirs done building libs 2 out of 9
 1>d:\winddk\7600.16385.1\lib\wxp\i386\..\..\wlh\i386\aux_klib.lib 
 1>..\liblfds.6\bin\i386\liblfds.lib 
 1>d:\winddk\7600.16385.1\lib\wxp\i386\sehupd.lib 
-4>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-2>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-3>Linking for c:\users\administrator\desktop\win-pvdrivers\shutdownmon *************
+4>Linking for c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig *************
+4>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+4>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig
+3>Linking for c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon *************
 3>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-3>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\shutdownmon
+3>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon
+2>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+4>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
 3>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-1>Linking for c:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents *************
+1>Linking for c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents *************
 1>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
-1>BUILDMSG: Processing c:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents
-4> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb.sys /machine:ix86 @c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\lnk.rsp
-2> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\win-pvdrivers\copyconfig\objfre_wxp_x86\i386\copyconfig.exe /machine:ix86 @c:\users\administrator\desktop\win-pvdrivers\copyconfig\objfre_wxp_x86\i386\lnk.rsp
+1>BUILDMSG: Processing c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents
+2> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb.sys /machine:ix86 @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\lnk.rsp
+4> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig\objfre_wxp_x86\i386\copyconfig.exe /machine:ix86 @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig\objfre_wxp_x86\i386\lnk.rsp
+1>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
 2>Microsoft (R) Incremental Linker Version 9.00.30729.207
 2>Copyright (C) Microsoft Corporation.  All rights reserved.
 2>/MERGE:_PAGE=PAGE 
@@ -1008,22 +1009,33 @@ Number of dirs done building libs 2 out of 9
 2>/osversion:6.1 
 2>/functionpadmin:5 
 2>/safeseh 
-2>/nxcompat 
-2>/merge:.rdata=.text 
 2>/pdbcompress 
-2>/STACK:0x40000,0x2000 
-2>/tsaware 
-2>/dynamicbase 
-2>/subsystem:console,5.01 
-2>/base:0x400000 
-2>/entry:mainCRTStartup 
-2>c:\users\administrator\desktop\win-pvdrivers\copyconfig\objfre_wxp_x86\i386\copyconfig.obj 
-2>d:\winddk\7600.16385.1\lib\wxp\i386\advapi32.lib 
-2>d:\winddk\7600.16385.1\lib\wxp\i386\kernel32.lib 
-2>d:\winddk\7600.16385.1\lib\wxp\i386\msvcrt_winxp.obj 
-2>D:\WinDDK\7600.16385.1\lib\crt\i386\msvcrt.lib 
+2>/STACK:0x40000,0x1000 
+2>/driver 
+2>/base:0x10000 
+2>/align:0x80 /stub:d:\winddk\7600.16385.1\lib\wxp\stub512.com 
+2>/subsystem:native,5.01 
+2>/entry:FxDriverEntry@8 
+2>/out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb.sys 
+2>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb.res 
+2>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb.obj 
+2>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb_fdo.obj 
+2>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb_hub.obj 
+2>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb_huburb.obj 
+2>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb_devurb.obj 
+2>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\xenusb\objfre_wxp_x86\i386\xenusb_decode.obj 
+2>d:\winddk\7600.16385.1\lib\wxp\i386\BufferOverflowK.lib 
+2>d:\winddk\7600.16385.1\lib\wxp\i386\ntoskrnl.lib 
+2>d:\winddk\7600.16385.1\lib\wxp\i386\hal.lib 
+2>d:\winddk\7600.16385.1\lib\wxp\i386\wmilib.lib 
+2>D:\WinDDK\7600.16385.1\lib\wdf\kmdf\i386\1.9\WdfLdr.lib 
+2>D:\WinDDK\7600.16385.1\lib\wdf\kmdf\i386\1.9\WdfDriverEntry.lib 
 2>d:\winddk\7600.16385.1\lib\wxp\i386\ntstrsafe.lib 
+2>d:\winddk\7600.16385.1\lib\wxp\i386\wdmsec.lib 
+2>d:\winddk\7600.16385.1\lib\wxp\i386\Rtlver.lib 
+2>d:\winddk\7600.16385.1\lib\wxp\i386\..\..\wlh\i386\aux_klib.lib 
 2>d:\winddk\7600.16385.1\lib\wxp\i386\sehupd.lib 
+3> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon\objfre_wxp_x86\i386\shutdownmon.exe /machine:ix86 @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon\objfre_wxp_x86\i386\lnk.rsp
 4>Microsoft (R) Incremental Linker Version 9.00.30729.207
 4>Copyright (C) Microsoft Corporation.  All rights reserved.
 4>/MERGE:_PAGE=PAGE 
@@ -1042,34 +1054,22 @@ Number of dirs done building libs 2 out of 9
 4>/osversion:6.1 
 4>/functionpadmin:5 
 4>/safeseh 
+4>/nxcompat 
+4>/merge:.rdata=.text 
 4>/pdbcompress 
-4>/STACK:0x40000,0x1000 
-4>/driver 
-4>/base:0x10000 
-4>/align:0x80 /stub:d:\winddk\7600.16385.1\lib\wxp\stub512.com 
-4>/subsystem:native,5.01 
-4>/entry:FxDriverEntry@8 
-4>/out:c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb.sys 
-4>c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb.res 
-4>c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb.obj 
-4>c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb_fdo.obj 
-4>c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb_hub.obj 
-4>c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb_huburb.obj 
-4>c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb_devurb.obj 
-4>c:\users\administrator\desktop\win-pvdrivers\xenusb\objfre_wxp_x86\i386\xenusb_decode.obj 
-4>d:\winddk\7600.16385.1\lib\wxp\i386\BufferOverflowK.lib 
-4>d:\winddk\7600.16385.1\lib\wxp\i386\ntoskrnl.lib 
-4>d:\winddk\7600.16385.1\lib\wxp\i386\hal.lib 
-4>d:\winddk\7600.16385.1\lib\wxp\i386\wmilib.lib 
-4>D:\WinDDK\7600.16385.1\lib\wdf\kmdf\i386\1.9\WdfLdr.lib 
-4>D:\WinDDK\7600.16385.1\lib\wdf\kmdf\i386\1.9\WdfDriverEntry.lib 
+4>/STACK:0x40000,0x2000 
+4>/tsaware 
+4>/dynamicbase 
+4>/subsystem:console,5.01 
+4>/base:0x400000 
+4>/entry:mainCRTStartup 
+4>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\copyconfig\objfre_wxp_x86\i386\copyconfig.obj 
+4>d:\winddk\7600.16385.1\lib\wxp\i386\advapi32.lib 
+4>d:\winddk\7600.16385.1\lib\wxp\i386\kernel32.lib 
+4>d:\winddk\7600.16385.1\lib\wxp\i386\msvcrt_winxp.obj 
+4>D:\WinDDK\7600.16385.1\lib\crt\i386\msvcrt.lib 
 4>d:\winddk\7600.16385.1\lib\wxp\i386\ntstrsafe.lib 
-4>d:\winddk\7600.16385.1\lib\wxp\i386\wdmsec.lib 
-4>d:\winddk\7600.16385.1\lib\wxp\i386\Rtlver.lib 
-4>d:\winddk\7600.16385.1\lib\wxp\i386\..\..\wlh\i386\aux_klib.lib 
 4>d:\winddk\7600.16385.1\lib\wxp\i386\sehupd.lib 
-1>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
-3> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\win-pvdrivers\shutdownmon\objfre_wxp_x86\i386\shutdownmon.exe /machine:ix86 @c:\users\administrator\desktop\win-pvdrivers\shutdownmon\objfre_wxp_x86\i386\lnk.rsp
 3>Microsoft (R) Incremental Linker Version 9.00.30729.207
 3>Copyright (C) Microsoft Corporation.  All rights reserved.
 3>/MERGE:_PAGE=PAGE 
@@ -1097,7 +1097,7 @@ Number of dirs done building libs 2 out of 9
 3>/subsystem:console,5.01 
 3>/base:0x400000 
 3>/entry:mainCRTStartup 
-3>c:\users\administrator\desktop\win-pvdrivers\shutdownmon\objfre_wxp_x86\i386\shutdownmon.obj 
+3>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\shutdownmon\objfre_wxp_x86\i386\shutdownmon.obj 
 3>d:\winddk\7600.16385.1\lib\wxp\i386\advapi32.lib 
 3>d:\winddk\7600.16385.1\lib\wxp\i386\kernel32.lib 
 3>d:\winddk\7600.16385.1\lib\wxp\i386\msvcrt_winxp.obj 
@@ -1106,7 +1106,7 @@ Number of dirs done building libs 2 out of 9
 3>d:\winddk\7600.16385.1\lib\wxp\i386\setupapi.lib 
 3>d:\winddk\7600.16385.1\lib\wxp\i386\powrprof.lib 
 3>d:\winddk\7600.16385.1\lib\wxp\i386\sehupd.lib 
-1> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents\objfre_wxp_x86\i386\waitnopendinginstallevents.exe /machine:ix86 @c:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents\objfre_wxp_x86\i386\lnk.rsp
+1> D:\WinDDK\7600.16385.1\Bin\x86\oacr\oacrlink /out:c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents\objfre_wxp_x86\i386\waitnopendinginstallevents.exe /machine:ix86 @c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents\objfre_wxp_x86\i386\lnk.rsp
 1>Microsoft (R) Incremental Linker Version 9.00.30729.207
 1>Copyright (C) Microsoft Corporation.  All rights reserved.
 1>/MERGE:_PAGE=PAGE 
@@ -1134,7 +1134,7 @@ Number of dirs done building libs 2 out of 9
 1>/subsystem:console,5.01 
 1>/base:0x400000 
 1>/entry:mainCRTStartup 
-1>c:\users\administrator\desktop\win-pvdrivers\waitnopendinginstallevents\objfre_wxp_x86\i386\waitnopendinginstallevents.obj 
+1>c:\users\administrator\desktop\git-workspace\win-pvdrivers3.25\waitnopendinginstallevents\objfre_wxp_x86\i386\waitnopendinginstallevents.obj 
 1>d:\winddk\7600.16385.1\lib\wxp\i386\advapi32.lib 
 1>d:\winddk\7600.16385.1\lib\wxp\i386\kernel32.lib 
 1>d:\winddk\7600.16385.1\lib\wxp\i386\msvcrt_winxp.obj 
